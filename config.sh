@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/mastersenpai0405/recovery_device_infinix_X683"
+export DT_LINK="https://github.com/twrpdtgen/android_device_micromax_E7446"
 
-export DEVICE="X683"
-export OEM="infinix"
+export DEVICE="E7446"
+export OEM="micromax"
 export TARGET="recoveryimage"
 
 export OUTPUT="recovery.img"
