@@ -37,7 +37,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 #export LC_ALL="C"
 
 # lunch the target
-lunch omni_${DEVICE}-eng && mka $TARGET || { echo "ERROR: Failed to lunch the target!" && exit 1; }
+lunch twrp_${DEVICE}-eng && mka $TARGET || { echo "ERROR: Failed to lunch the target!" && exit 1; }
 
 # Exit
 exit 0
