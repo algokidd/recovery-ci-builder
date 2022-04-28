@@ -1,6 +1,6 @@
 env:
     # RECOVERY REPOSITORY SOURCE TWRP,PBRP,SHRP
-    MANIFEST: repo init -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+    MANIFEST: https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
 
     # Config
     CONFIG: config.sh
