@@ -31,4 +31,4 @@ task:
 
   Upload_script:
       - export TIMEOUT=43200 # Link timeout (in minutes)
-      - curl https://raw.githubusercontent.com/That1Weeabo/recovery-ci-builder/twrp-builder/scripts/upload.sh | bash
+      - curl https://raw.githubusercontent.com/mastersenpai0405/recovery-ci-builder/twrp-builder/scripts/upload.sh | bash
