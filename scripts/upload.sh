@@ -4,14 +4,6 @@
  ​#​ Source Vars 
  ​source​ ​$CONFIG 
   
- ​#​ A Function to Send Posts to Telegram 
- ​telegram_message​() { 
- ​        curl -s -X POST ​"​https://api.telegram.org/bot​${TG_TOKEN}​/sendMessage​"​ \ 
- ​        -d chat_id=​"​${TG_CHAT_ID}​"​ \ 
- ​        -d parse_mode=​"​HTML​"​ \ 
- ​        -d text=​"​$1​" 
- ​} 
-  
  ​#​ Change to the Source Directory 
  ​cd​ ​~​/twrp 
   
