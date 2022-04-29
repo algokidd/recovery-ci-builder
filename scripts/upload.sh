@@ -39,7 +39,7 @@ fi
 transfer wet $FILENAME > link.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
 
 
-DL_LINK=$(cat link.txt | grep Download | cut -d\  -f3)
+DL_LINK=$(link.txt)
 
 # Show the Download Link
 echo "=============================================="
