@@ -7,7 +7,7 @@ export DEVICE="E7446"
 export OEM="micromax"
 export TARGET="recoveryimage"
 
-export OUTPUT="twrp.img"
+export OUTPUT="recovery.img"
 
 # Kernel Source
 # Uncomment the next line if you want to clone a kernel source.
