@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/That1Weeabo/bin2td"
+export DT_LINK="https://github.com/That1Weeabo/android_device_micromax_E7446"
 
 export DEVICE="E7446"
 export OEM="micromax"
