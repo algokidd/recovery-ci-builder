@@ -4,7 +4,7 @@
 export DT_LINK="https://github.com/algokidd/rmx2117_pbrp"
 
 export DEVICE="RMX2117"
-export OEM="Realme"
+export OEM="realme"
 export TARGET="recoveryimage"
 
 export OUTPUT="recovery.img"
