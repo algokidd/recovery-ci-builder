@@ -55,11 +55,12 @@ DATE_S=$(date +"%T")
 # Send the Message on Telegram
 echo -e \
 "
-TWRP-CI
+PBRP - realme Narzo 30 Pro
 ✅ Build Completed Successfully!
 📱 Device: "${DEVICE}"
 🖥 Build System: "TWRP BUILDER"
-⬇️ Download Link: <a href=\"${MIRROR_LINK}\">Here</a>
+⬇️ Download Link: <a href=\"${DL_LINK}\">Here</a>
+⬇️ Mirror Link: <a href=\"${MIRROR_LINK}\">Here</a>
 📅 Date: "$(date +%d\ %B\ %Y)"
 ⏱ Time: "$(date +%T)"
 " > tg.html
