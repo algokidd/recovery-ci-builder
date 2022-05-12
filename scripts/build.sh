@@ -9,7 +9,7 @@ cd ~/twrp
 
 echo -e \
 "
-🦊 OrangeFox Recovery CI
+✨ PBRP Recovery CI
 
 ✔️ The Build has been Triggered!
 
@@ -29,7 +29,7 @@ export ALLOW_MISSING_DEPENDENCIES=true
 #export LC_ALL="C"
 
 # lunch the target
-lunch twrp_${DEVICE}-eng && mka $TARGET || { echo "ERROR: Failed to lunch the target!" && exit 1; }
+lunch omni_${DEVICE}-eng && mka $TARGET  || { echo "ERROR: Failed to lunch the target!" && exit 1; }
 
 # Exit
 exit 0

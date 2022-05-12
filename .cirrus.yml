@@ -1,13 +1,13 @@
 env:
     # RECOVERY REPOSITORY SOURCE TWRP,PBRP,SHRP
-    MANIFEST: --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
+    MANIFEST: --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb.git -b android-11.0 --groups=all,-notdefault,-device,-darwin,-x86,-mips
 
     # Config
     CONFIG: config.sh
 
     # Telegram
-    TG_CHAT_ID: ENCRYPTED[0003e1cf5276424a5b2afb8c6a39f2d830864e8555b37220bd3bf173f3ef5b8769ab98425d96a76adf64b18241c940dd]
-    TG_TOKEN: ENCRYPTED[03de4105db5d23ec42490965c0a0f79217c1e3366cb152bd9d9a045e22586eba675615e1f08bf1aea3e860d499efde60]
+    TG_CHAT_ID: 511410417
+    TG_TOKEN: 5192972460:AAH7m8mkkEk60SyTqcMnmaKDtfb1uKt5WnE
 
     # Cirrus Specific Vars (Do *NOT* Change)
     CIRRUS_SHELL: bash
@@ -21,14 +21,14 @@ task:
       memory: 20G
 
   Checks_script:
-      - curl -sL https://raw.githubusercontent.com/That1Weeabo/recovery-ci-builder/twrp-builder/scripts/checks.sh | bash
+      - curl -sL https://raw.githubusercontent.com/algokidd/recovery-ci-builder/twrp-builder/scripts/checks.sh | bash
 
   Sync_script:
-      - curl -sL https://raw.githubusercontent.com/That1Weeabo/recovery-ci-builder/twrp-builder/scripts/sync.sh | bash
+      - curl -sL https://raw.githubusercontent.com/algokidd/recovery-ci-builder/twrp-builder/scripts/sync.sh | bash
 
   Build_script:
-      - curl -sL https://raw.githubusercontent.com/That1Weeabo/recovery-ci-builder/twrp-builder/scripts/build.sh | bash
+      - curl -sL https://raw.githubusercontent.com/algokidd/recovery-ci-builder/twrp-builder/scripts/build.sh | bash
 
   Upload_script:
       - export TIMEOUT=43200 # Link timeout (in minutes)
-      - curl https://raw.githubusercontent.com/That1Weeabo/recovery-ci-builder/twrp-builder/scripts/upload.sh | bash
+      - curl https://raw.githubusercontent.com/algokidd/recovery-ci-builder/twrp-builder/scripts/upload.sh | bash

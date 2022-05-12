@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/That1Weeabo/bin2td"
+export DT_LINK="https://github.com/algokidd/rmx2117_pbrp"
 
-export DEVICE="E7446"
-export OEM="micromax"
+export DEVICE="RMX2117"
+export OEM="Realme"
 export TARGET="recoveryimage"
 
 export OUTPUT="recovery.img"
