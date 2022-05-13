@@ -1,4 +1,5 @@
-#!/bin/bash
+ 
+ #!/bin/bash
 
 # Source Vars
 source $CONFIG
@@ -36,7 +37,6 @@ fi
 # Upload to WeTransfer
 # NOTE: the current Docker Image, "registry.gitlab.com/sushrut1101/docker:latest", includes the 'transfer' binary by Default
 transfer wet $FILENAME > link.txt || { echo "ERROR: Failed to Upload the Build!" && exit 1; }
-
 # Mirror to oshi.at
 curl -T $FILENAME https://oshi.at/${FILENAME}/${OUTPUT} > mirror.txt || { echo "WARNING: Failed to Mirror the Build!"; }
 
@@ -55,8 +55,10 @@ DATE_S=$(date +"%T")
 # Send the Message on Telegram
 echo -e \
 "
-PBRP - realme Narzo 30 Pro
+TWRP-CI
+
 ✅ Build Completed Successfully!
+
 📱 Device: "${DEVICE}"
 🖥 Build System: "TWRP BUILDER"
 ⬇️ Download Link: <a href=\"${DL_LINK}\">Here</a>

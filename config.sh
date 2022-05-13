@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/algokidd/rmx2117_pbrp"
+export DT_LINK="https://github.com/algokidd/rmx2117_twrp"
 
 export DEVICE="RMX2117"
 export OEM="realme"
