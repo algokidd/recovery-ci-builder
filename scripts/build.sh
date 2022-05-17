@@ -21,15 +21,15 @@ telegram_message "${TG_TEXT}"
 echo " "
 
 # Prepare the Build Environment
+export ALLOW_MISSING_DEPENDENCIES=true
 source build/envsetup.sh
 
 # export some Basic Vars
-export ALLOW_MISSING_DEPENDENCIES=true
 #export FOX_USE_TWRP_RECOVERY_IMAGE_BUILDER=1
 #export LC_ALL="C"
 
 # lunch the target
-lunch twrp_${DEVICE}-eng && mka $TARGET  || { echo "ERROR: Failed to lunch the target!" && exit 1; }
-
+lunch twrp_${DEVICE}-eng|| { echo "ERROR: Failed to lunch the target!" && exit 1; }
+mka -j$(nproc --all) recoveryimage
 # Exit
 exit 0

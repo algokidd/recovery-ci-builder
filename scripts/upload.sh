@@ -55,7 +55,7 @@ DATE_S=$(date +"%T")
 # Send the Message on Telegram
 echo -e \
 "
-TWRP-CI
+TWRP-CI N30 Pro 
 
 ✅ Build Completed Successfully!
 
