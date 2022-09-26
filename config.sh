@@ -3,7 +3,7 @@
 # Device
 export DT_LINK="https://github.com/carlodeeCrypton/custom_recovery_realme_RMX2117L1.git"
 
-export DEVICE="RMX2117"
+export DEVICE="RMX2117L1"
 export OEM="realme"
 export TARGET="recoveryimage"
 
