@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Device
-export DT_LINK="https://github.com/carlodeeCrypton/custom_recovery_realme_RMX2117L1.git"
+export DT_LINK="https://github.com/carlodeeCrypton/custom_recovery_realme_RMX2117.git"
 
 export DEVICE="RMX2117"
 export OEM="realme"
